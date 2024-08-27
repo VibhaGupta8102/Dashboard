@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+/* ############## searchbar ############### */
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: rgb(201, 226, 248);
+}
+.searchbox {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  background-color: aliceblue;
+  height: 3em;
+  width: 20%;
+  padding: 0.5em;
+}
+.searchbox input {
+  font-size: 1.5em;
+  border: none;
+  background-color: aliceblue;
+}
+
+/* ############### dashboard ###############  */
+.dashboard {
+  background-color: rgb(203, 228, 250);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: aliceblue;
+
+  button {
+    border: none;
+    font-size: 1em;
+  }
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0.5em;
+  padding: 1em;
+}
+
+.widgets {
+  display: flex;
+  gap: 2em;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 4px;
+  height: 216px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  flex-shrink: 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.empty {
+  margin: 5em 5em;
+  text-align: center;
+}
+
+/* ################## addwidget ################# */
+
+.add-widget-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  height: 97%;
+  position: absolute;
+  top: 6rem;
+  right: 0rem;
+}
+
+.category-tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.widget-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.widget-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.widget-item.selected {
+  border-color: #007bff;
+  background-color: #e9f7fe;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-buttons button:first-child {
+  background-color: #ccc;
+}
+
+.action-buttons button:last-child {
+  background-color: #007bff;
+  color: white;
+}
+
+/* ############# addwidgetmodal ###############  */
+.Widget-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(162, 180, 196);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 2em;
+  gap: 1em;
+  width: 30%;
+  height: 30%;
+  justify-content: space-between;
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}
+
+/* ############ searchbox ##################  */
+
+.search-item {
+  position: absolute;
+  top: 8%;
+  right: 19%;
+  background-color: aliceblue;
+  width: 19.5%;
+  border-radius: 4px;
+}
